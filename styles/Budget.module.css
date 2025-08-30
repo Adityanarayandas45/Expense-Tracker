@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 24px;
+  flex: 1;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 100%; 
+  width: 100%;
+}
+
+
+.addCard {
+  border: 2px dashed #90caf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #f9fcff;
+  transition: all 0.3s ease;
+  font-size: 40px;
+}
+.addCard:hover {
+  background: #e3f2fd;
+  transform: scale(1.05);
+  border-color: #1976d2;
+}
+.addIcon {
+  font-size: 40px;
+  color: #1976d2;
+}
+
+
+.budgetCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+.budgetCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+.budgetTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.progressBar {
+  height: 10px;
+  background: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.progressFill {
+  height: 8px;
+  border-radius: 4px;
+  transition: width 0.3s ease, background-color 0.3s ease; 
+}
+
+.spentInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}

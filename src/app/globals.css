@@ -1,0 +1,33 @@
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+:root {
+  --background: #ffffff;
+  --text: #111111;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --text: #eeeeee;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bigNumber {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
